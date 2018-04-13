@@ -1,38 +1,41 @@
-## Commands
+Try
 
-### npm start
+open Weex Playground , Scan the qrcode below
 
-Starts the development server for you to preview your weex page on browser.
-You can also scan the QR code using weex playground to preview weex page on native.
+（no optimizing separately for android）
+Run
+install
 
-### npm run dev
+$ npm install
 
-Open the code compilation task in watch mode.
+run web
 
-### npm run ios
+building web pro
 
-(Mac only, requires Xcode)
-Starts the development server and loads your app in an iOS simulator.
+$ npm run build 
 
-### npm run android
+building web pro & running service
 
-(Requires Android build tools)
-Starts the development server and loads your app on a connected Android device or emulator.
+$ npm run dev & npm run serve 
 
-### npm run pack:ios
+run ios
 
-(Mac only, requires Xcode)
-Packaging ios project into ipa package.
+ios packaging requires developer accounts, f not, you can only install it on your own connected iphone through xcode debugging, or virtual machine。
 
-### npm run pack:android
+The following is the implementation of the non-developer account
 
-(Requires Android build tools)
-Packaging android project into apk package.
+install ios platform
 
-### npm run pack:web
+$ weexpack platform add ios
 
-Packaging html5 project into `web/build` folder.
+build weex bundles
 
-### npm run test
+$ weex build ios
 
-Starts the test runner.
+This step is only for packaging, not fully executed, cancel before you enter the bundle id。
+
+further info https://segmentfault.com/a/1190000010984857
+
+next, use xcode to debug, refer to the native debug step.
+
+（Using XCode to open file platforms/ios/WeexDemo.xcworkspace, simple configurate, then run or debug）
