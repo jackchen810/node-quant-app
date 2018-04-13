@@ -7,7 +7,7 @@
         <scroller ref="contentScroller" :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
-            <text class="i-name">zwwill7</text>
+            <text class="i-name">chenzejun</text>
             <div class="b-tlt">
                 <image class="i-tag tag-e" resize="contain" src="http://yanxuan.nosdn.127.net/3dc6e876620bb84a5dac3deb6ecd4916.png"></image>
                 <text class="i-tag tag-v8 iconfont">&#xe6cc;</text>

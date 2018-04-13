@@ -1,13 +1,10 @@
-/**
- * Created by zwwill on 2017/8/28.
- */
-import App from './App.vue'
+/* global Vue */
+
+import App from '@/App.vue'
 import router from './router'
 // import { sync } from 'vuex-router-sync'
-import * as filters from './filters'
-import mixins from './mixins'
-
-
+import * as filters from '@/filters'
+import mixins from '@/mixins'
 
 // sync the router with the vuex store.
 // this registers `store.state.route`
@@ -20,7 +17,6 @@ Object.keys(filters).forEach(key => {
 
 // register global mixins.
 Vue.mixin(mixins)
-
 
 // create the app instance.
 // here we inject the router and store to all child components,

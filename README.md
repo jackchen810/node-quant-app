@@ -1,66 +1,38 @@
-English | [简体中文](README.zh-CN.md)
+## Commands
 
-# :art: High quality Weex Demo
+### npm start
 
-![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/banner.png)
+Starts the development server for you to preview your weex page on browser.
+You can also scan the QR code using weex playground to preview weex page on native.
 
-> The following is a brief step to run the demo
-> further introduction，you can read this [网易严选App感受WEEX开发](https://github.com/zwwill/blog/issues/3)
+### npm run dev
 
+Open the code compilation task in watch mode.
 
-# Try
+### npm run ios
 
-open [Weex Playground](http://weex.apache.org/cn/playground.html) , Scan the qrcode below
+(Mac only, requires Xcode)
+Starts the development server and loads your app in an iOS simulator.
 
-![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/erHome.png)
+### npm run android
 
-（no optimizing separately for android）
+(Requires Android build tools)
+Starts the development server and loads your app on a connected Android device or emulator.
 
-# Run
+### npm run pack:ios
 
-## install
+(Mac only, requires Xcode)
+Packaging ios project into ipa package.
 
-```
-$ npm install
-```
+### npm run pack:android
 
-## run web
+(Requires Android build tools)
+Packaging android project into apk package.
 
-building web pro
+### npm run pack:web
 
-```
-$ npm run build 
-```
+Packaging html5 project into `web/build` folder.
 
-building web pro & running service
+### npm run test
 
-```
-$ npm run dev & npm run serve 
-```
-
-## run ios
-
-ios packaging requires developer accounts, f not, you can only install it on your own connected iphone through xcode debugging, or virtual machine。
-
-The following is the implementation of the non-developer account
-
-install ios platform
-
-``` 
-$ weexpack platform add ios
-```
-
-build weex bundles
-
-```
-$ weex build ios
-```
-
-This step is only for packaging, not fully executed, cancel before you enter the bundle id。
-
-further info [https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857#articleHeader14)
-
-next, use xcode to debug, refer to the native debug step.
-
-（Using XCode to open file `platforms/ios/WeexDemo.xcworkspace`, simple configurate, then run or debug）
-
+Starts the test runner.
